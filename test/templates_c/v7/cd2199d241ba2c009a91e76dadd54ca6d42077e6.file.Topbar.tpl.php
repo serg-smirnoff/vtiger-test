@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2018-09-19 01:28:20
+<?php /* Smarty version Smarty-3.1.7, created on 2018-09-19 01:33:27
          compiled from "/var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/includes/runtime/../../layouts/v7/modules/Vtiger/partials/Topbar.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:14768785765ba17c04d60941-49038465%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cd2199d241ba2c009a91e76dadd54ca6d42077e6' => 
     array (
       0 => '/var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/includes/runtime/../../layouts/v7/modules/Vtiger/partials/Topbar.tpl',
-      1 => 1523977544,
+      1 => 1537309953,
       2 => 'file',
     ),
   ),
@@ -15,12 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_5ba17c04d9ae6',
   'variables' => 
   array (
     'MODULE' => 0,
     'SELECTED_MENU_CATEGORY' => 0,
     'APP_IMAGE_MAP' => 0,
-    'COMPANY_LOGO' => 0,
     'GLOBAL_SEARCH_VALUE' => 0,
     'QUICK_CREATE_MODULES' => 0,
     'moduleModel' => 0,
@@ -37,16 +38,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'IMAGE_INFO' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5ba17c04d9ae6',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5ba17c04d9ae6')) {function content_5ba17c04d9ae6($_smarty_tpl) {?>
 
 <?php echo $_smarty_tpl->getSubTemplate ("modules/Vtiger/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 <?php $_smarty_tpl->tpl_vars['APP_IMAGE_MAP'] = new Smarty_variable(Vtiger_MenuStructure_Model::getAppIcons(), null, 0);?><nav class="navbar navbar-default navbar-fixed-top app-fixed-navbar"><div class="container-fluid global-nav"><div class="row"><div class="col-lg-3 col-md-3 col-sm-3 app-navigator-container"><div class="row"><div id="appnavigator" class="col-sm-2 col-xs-2 cursorPointer app-switcher-container" data-app-class="<?php if ($_smarty_tpl->tpl_vars['MODULE']->value=='Home'||!$_smarty_tpl->tpl_vars['MODULE']->value){?>fa-dashboard<?php }else{ ?><?php echo $_smarty_tpl->tpl_vars['APP_IMAGE_MAP']->value[$_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value];?>
-<?php }?>"><div class="row app-navigator"><span class="app-icon fa fa-bars"></span></div></div><div class="logo-container col-lg-9 col-md-9 col-sm-9 col-xs-9"><div class="row"><a href="index.php" class="company-logo"><img src="<?php echo $_smarty_tpl->tpl_vars['COMPANY_LOGO']->value->get('imagepath');?>
-" alt="<?php echo $_smarty_tpl->tpl_vars['COMPANY_LOGO']->value->get('alt');?>
-"/></a></div></div></div></div><div class="search-links-container col-md-3 col-lg-3 hidden-sm"><div class="search-link hidden-xs"><span class="fa fa-search" aria-hidden="true"></span><input id="globalSearchValue" class="keyword-input" type="text" placeholder="<?php echo vtranslate('LBL_TYPE_SEARCH');?>
+<?php }?>"><div class="row app-navigator"><span class="app-icon fa fa-bars"></span></div></div><div class="logo-container col-lg-9 col-md-9 col-sm-9 col-xs-9"><div class="row"></div></div></div></div><div class="search-links-container col-md-3 col-lg-3 hidden-sm"><div class="search-link hidden-xs"><span class="fa fa-search" aria-hidden="true"></span><input id="globalSearchValue" class="keyword-input" type="text" placeholder="<?php echo vtranslate('LBL_TYPE_SEARCH');?>
 " value="<?php echo $_smarty_tpl->tpl_vars['GLOBAL_SEARCH_VALUE']->value;?>
 "><span id="adv-search" class="adv-search fa fa-chevron-circle-down pull-right cursorPointer" aria-hidden="true"></span></div></div><div id="navbar" class="col-sm-6 col-md-3 col-lg-3 collapse navbar-collapse navbar-right global-actions"><ul class="nav navbar-nav"><li><div class="dropdown"><div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><a href="#" id="menubar_quickCreate" class="qc-button fa fa-plus-circle" title="<?php echo vtranslate('LBL_QUICK_CREATE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 " aria-hidden="true"></a></div><ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="width:500px;"><li class="title" style="padding: 5px 0 0 15px;"><strong><?php echo vtranslate('LBL_QUICK_CREATE',$_smarty_tpl->tpl_vars['MODULE']->value);?>

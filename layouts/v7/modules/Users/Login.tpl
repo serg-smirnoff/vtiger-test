@@ -9,7 +9,7 @@
 {* modules/Users/views/Login.php *}
 
 {strip}
-	<style>
+	<style>	
 		body {
 			background: url(layouts/v7/resources/Images/login-background.jpg);
 			background-position: center;
@@ -182,6 +182,9 @@
 			overflow: hidden;
 			background: transparent;
 		}
+		.padding-20{
+			padding: 20px 0 0 0;
+		}
                 
         {* SalesPlatform begin*}
                 .linksNavBar {
@@ -256,8 +259,10 @@
                 *}
 			<div class="loginDiv widgetHeight">
 		{*SalesPlatform.ru begin*}
-				<img class="img-responsive user-logo" src="layouts/v7/resources/Images/logo.png">
-                {*
+				
+				<div class="padding-20"></div>
+				
+				{*
 				<img class="img-responsive user-logo" src="layouts/v7/resources/Images/vtiger.png">
                 SalesPlatform.ru end
                 
