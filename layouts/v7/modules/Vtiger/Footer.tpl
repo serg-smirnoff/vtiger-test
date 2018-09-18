@@ -16,19 +16,6 @@
         </div>
         {* SalesPlatform.ru end *}
 	<p>
-		{* SalesPlatform begin*}
-                {*Powered by vtiger CRM - 7.0&nbsp;&nbsp;© 2004 - {date('Y')}&nbsp;&nbsp;*}
-                {*<a href="//www.vtiger.com" target="_blank">Vtiger</a>&nbsp;|&nbsp;*}
-                {*<a href="https://www.vtiger.com/privacy-policy" target="_blank">Privacy Policy</a>*}
-                
-            {vtranslate('POWEREDBY')} {$VTIGER_VERSION} &nbsp;
-            &copy; 2004 - {date('Y')}&nbsp&nbsp;
-            <a href="//www.vtiger.com" target="_blank">vtiger.com</a>
-            &nbsp;|&nbsp;
-            {* SalesPlatform.ru begin Doc links fixed *}
-            &copy; 2011 - {date('Y')}&nbsp&nbsp;
-            <a href="//salesplatform.ru/" target="_blank">SalesPlatform.ru</a>
-            {*SalsePlatform end *}
 	</p>
 </footer>
 </div>

@@ -23,9 +23,6 @@
 						</div>
 						<div class="logo-container col-lg-9 col-md-9 col-sm-9 col-xs-9">
 							<div class="row">
-								<a href="index.php" class="company-logo">
-									<img src="{$COMPANY_LOGO->get('imagepath')}" alt="{$COMPANY_LOGO->get('alt')}"/>
-								</a>
 							</div>
 						</div>  
 					</div>

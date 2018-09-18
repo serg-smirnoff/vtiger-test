@@ -29,6 +29,7 @@
 		<footer class="noprint">
                     <div class="vtFooter">
 			<p>
+				
 				{vtranslate('POWEREDBY')} {$VTIGER_VERSION} &nbsp;
 				&copy; 2004 - {date('Y')}&nbsp&nbsp;
 				<a href="//www.vtiger.com" target="_blank">vtiger.com</a>
@@ -40,6 +41,8 @@
 				{* &nbsp;|&nbsp; *}
 				{* <a href="https://www.vtiger.com/crm/privacy-policy" target="_blank">{vtranslate('LBL_PRIVACY_POLICY')}</a> *}
                                 {* SalesPlatform.ru end *}
+			
+			
 			</p>
                      </div>
 		</footer>

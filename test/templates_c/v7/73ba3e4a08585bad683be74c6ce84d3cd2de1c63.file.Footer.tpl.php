@@ -1,31 +1,30 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2018-09-18 22:20:41
+<?php /* Smarty version Smarty-3.1.7, created on 2018-09-19 01:30:15
          compiled from "/var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/includes/runtime/../../layouts/v7/modules/Vtiger/Footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7406213915ba150096a3983-84962744%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16508921335ba17c04f16e16-09241550%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '73ba3e4a08585bad683be74c6ce84d3cd2de1c63' => 
     array (
       0 => '/var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/includes/runtime/../../layouts/v7/modules/Vtiger/Footer.tpl',
-      1 => 1508495595,
+      1 => 1537309805,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7406213915ba150096a3983-84962744',
+  'nocache_hash' => '16508921335ba17c04f16e16-09241550',
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_5ba17c04f1c67',
   'variables' => 
   array (
     'MODULE' => 0,
-    'VTIGER_VERSION' => 0,
     'LANGUAGE_STRINGS' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5ba150096aae1',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5ba150096aae1')) {function content_5ba150096aae1($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5ba17c04f1c67')) {function content_5ba17c04f1c67($_smarty_tpl) {?>
 
 <footer class="app-footer">
         
@@ -37,23 +36,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
         
 	<p>
-		
-                
-                
-                
-                
-            <?php echo vtranslate('POWEREDBY');?>
- <?php echo $_smarty_tpl->tpl_vars['VTIGER_VERSION']->value;?>
- &nbsp;
-            &copy; 2004 - <?php echo date('Y');?>
-&nbsp&nbsp;
-            <a href="//www.vtiger.com" target="_blank">vtiger.com</a>
-            &nbsp;|&nbsp;
-            
-            &copy; 2011 - <?php echo date('Y');?>
-&nbsp&nbsp;
-            <a href="//salesplatform.ru/" target="_blank">SalesPlatform.ru</a>
-            
 	</p>
 </footer>
 </div>
