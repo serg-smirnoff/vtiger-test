@@ -19,11 +19,13 @@ class Users_ListView_Model extends Vtiger_ListView_Model {
 		$linkTypes = array('LISTVIEWBASIC', 'LISTVIEW', 'LISTVIEWSETTING');
 		$links = Vtiger_Link_Model::getAllByType($this->getModule()->getId(), $linkTypes, $linkParams);
 
+		
+		
 		$basicLinks = $this->getBasicLinks();
 		foreach($basicLinks as $basicLink) {
 			$links['LISTVIEWBASIC'][] = Vtiger_Link_Model::getInstanceFromValues($basicLink);
 		}
-        
+        		
         $links['LISTVIEW'] = array();
         $advancedLinks = $this->getAdvancedLinks();
 		foreach($advancedLinks as $advancedLink) {
@@ -31,7 +33,8 @@ class Users_ListView_Model extends Vtiger_ListView_Model {
 		}
         
         $usersList = Users_Record_Model::getActiveAdminUsers();
-        $settingLinks = array();
+		
+		$settingLinks = array();
         if(count($usersList) ) {
             $changeOwnerLink = array(
                 'linktype' => 'LISTVIEWSETTING',
@@ -48,7 +51,7 @@ class Users_ListView_Model extends Vtiger_ListView_Model {
                 $links['LISTVIEWSETTING'][] = Vtiger_Link_Model::getInstanceFromValues($settingLink);
             }
         }
-
+		
 		return $links;
 	}
 
@@ -83,13 +86,17 @@ class Users_ListView_Model extends Vtiger_ListView_Model {
 	 * @return <Array> - Associative array of record id mapped to Vtiger_Record_Model instance.
 	 */
 	public function getListViewEntries($pagingModel) {
+		
 		$queryGenerator = $this->get('query_generator');
-                
+		
 		// Added as Users module do not have custom filters and id column is added by querygenerator.
 		$fields = $queryGenerator->getFields();
 		$fields[] = 'id';
-		$queryGenerator->setFields($fields);
 		
+		
+		$queryGenerator->setFields($fields);
+		        
+
 		return parent::getListViewEntries($pagingModel);
 	}
         

@@ -1,0 +1,12 @@
+[2018-09-19 02:14:46] Error on process request. Details: 
+Code - 1
+Message - Uncaught Error: Call to undefined method Users_Field_Model::has() in /var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/test/templates_c/v7/ecd42451e788ed7b8053cfc47e2f6e47eb173ee0.file.ListViewContents.tpl.php:74
+Stack trace:
+#0 /var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/libraries/Smarty/libs/sysplugins/smarty_internal_templatebase.php(180): content_5ba186e677daf(Object(Smarty_Internal_Template))
+#1 /var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/libraries/Smarty/libs/sysplugins/smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase->fetch('modules/Setting...', NULL, NULL, Object(Vtiger_Viewer), true)
+#2 /var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/includes/runtime/Viewer.php(177): Smarty_Internal_TemplateBase->display('modules/Setting...')
+#3 /var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/modules/Users/views/List.php(38): Vtiger_Viewer->view('ListViewContent...', 'Settings:Users')
+#4 /var/www/onlysites/data/www/test.onl
+File - /var/www/onlysites/data/www/test.onlysites.ru/crm-demo/vtiger/test/templates_c/v7/ecd42451e788ed7b8053cfc47e2f6e47eb173ee0.file.ListViewContents.tpl.php
+Line - 74
+

@@ -95,9 +95,10 @@ class Users extends CRMEntity {
 			'User Name'=>Array('vtiger_users'=>'user_name'),
 			'Status'=>Array('vtiger_users'=>'status'),
 			'Email'=>Array('vtiger_users'=>'email1'),
-			'Email2'=>Array('vtiger_users'=>'email2'),
+			/*'Email2'=>Array('vtiger_users'=>'email2'),*/
 			'Admin'=>Array('vtiger_users'=>'is_admin'),
-			'Phone'=>Array('vtiger_users'=>'phone_work')
+			'Phone'=>Array('vtiger_users'=>'phone_work'),
+			'Phone CRM Ext'=>Array('vtiger_users'=>'phone_crm_extension')
 	);
 	var $list_fields_name = Array(
 			'Last Name'=>'last_name',
@@ -106,9 +107,10 @@ class Users extends CRMEntity {
 			'User Name'=>'user_name',
 			'Status'=>'status',
 			'Email'=>'email1',
-			'Email2'=>'email2',
+			/*'Email2'=>'email2',*/
 			'Admin'=>'is_admin',
-			'Phone'=>'phone_work'
+			'Phone'=>'phone_work',
+			'Phone CRM Ext'=> 'phone_crm_extension'
 	);
 
 	//Default Fields for Email Templates -- Pavani
