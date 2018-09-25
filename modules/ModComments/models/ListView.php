@@ -12,7 +12,11 @@
  * ModComments ListView Model Class
  */
 class ModComments_ListView_Model extends Vtiger_ListView_Model {
-
+    
+	public function getName() {
+        return 'ModComments';
+    }
+	
 	/**
 	 * Function to get the list of listview links for the module
 	 * @param <Array> $linkParams

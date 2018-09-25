@@ -229,8 +229,9 @@ class Vtiger_WebUI extends Vtiger_EntryPoint {
 					$handler->checkPermission($request);
 				}
 
-				$notPermittedModules = array('ModComments','Integration','DashBoard');
-
+				//$notPermittedModules = array('ModComments','Integration','DashBoard');
+				$notPermittedModules = array('Integration','DashBoard');
+				
 				if(in_array($module, $notPermittedModules) && $view == 'List'){
 					header('Location:index.php?module=Home&view=DashBoard');
 				}
